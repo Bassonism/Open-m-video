@@ -1,25 +1,133 @@
-#,shortcode,url,date,is_carousel,headline,full_caption,image_file,status
-1,DfxT4JBmrYn,https://www.instagram.com/p/DfxT4JBmrYn/,"November 15, 2026",yes,Speaking at Chief Marketer in SF @motionapp_,"Speaking at Chief Marketer in SF @motionapp_ 
-
-Just a couple of bros 
-
-New bookshelf I’m releasing in December in collaboration with @the_essential_store 
-
-Locked in on film @rpn at Meta 
-
-Excellence @academiewine 
-
-Speaking in New York @tataritv 
-
-Idk dog I just be doing things 
-
-Designed by the legend @mostlyharmlessgems 
-
-B2b SaaS mogg off @air.hq 
-
-Steak interlude 
-
-🫡",images/001_DfxT4JBmrYn.jpg,ok
-2,DfvGigUNDMe,https://www.instagram.com/p/DfvGigUNDMe/,,unknown,Instagram,Instagram,,blocked: Instagram returned generic/login page
-3,DfphX0BFEvM,https://www.instagram.com/p/DfphX0BFEvM/,,unknown,Instagram,Instagram,,blocked: Instagram returned generic/login page
-4,DfkPWsmlGlr,https://www.instagram.com/p/DfkPWsmlGlr/,"November 10, 2026",yes,Building brand messaging and positioning in the modern era #marketingstrategy #marketingtips #brandstrategist,Building brand messaging and positioning in the modern era #marketingstrategy #marketingtips #brandstrategist,images/004_DfkPWsmlGlr.jpg,ok
+grid_position,type,headline,image_file
+1,pinned,Greek Yacht Charter Cost Breakdown (+ everything you need to know about how it works),covers/001_pinned_greek-yacht-charter-cost-breakdown-everything-you-.jpg
+2,pinned,LARP vs Luxury,covers/002_pinned_larp-vs-luxury.jpg
+3,pinned,Designer Heaven,covers/003_pinned_designer-heaven.jpg
+4,reel,Luxury Ads,covers/004_reel_luxury-ads.jpg
+5,carousel,"Chief Marketer, San Francisco (speaking photo, no headline)",covers/005_carousel_chief-marketer-san-francisco-speaking-photo-no-hea.jpg
+6,photo,Already Everywhere vs Up Next,covers/006_photo_already-everywhere-vs-up-next.jpg
+7,carousel,There Are Endless Yappers,covers/007_carousel_there-are-endless-yappers.jpg
+8,reel,Kid Adults,covers/008_reel_kid-adults.jpg
+9,reel,Creative Direction 101: Magazine References,covers/009_reel_creative-direction-101-magazine-references.jpg
+10,carousel,The 2026 Brand Messaging Checklist,covers/010_carousel_the-2026-brand-messaging-checklist.jpg
+11,reel,AI Editing,covers/011_reel_ai-editing.jpg
+12,reel,The Ski Wars: 2026 US vs the World,covers/012_reel_the-ski-wars-2026-us-vs-the-world.jpg
+13,reel,Mozarella Effect,covers/013_reel_mozarella-effect.jpg
+14,carousel,Marketing Is About Making Money,covers/014_carousel_marketing-is-about-making-money.jpg
+15,reel,Art Direction 101,covers/015_reel_art-direction-101.jpg
+16,reel,Product vs Brand: Espresso Machines,covers/016_reel_product-vs-brand-espresso-machines.jpg
+17,carousel,How to Get Dangerous With Meta Ads,covers/017_carousel_how-to-get-dangerous-with-meta-ads.jpg
+18,reel,Dad Habits,covers/018_reel_dad-habits.jpg
+19,reel,The Vault,covers/019_reel_the-vault.jpg
+20,reel,Fall Jackets,covers/020_reel_fall-jackets.jpg
+21,reel,Shopify Updates,covers/021_reel_shopify-updates.jpg
+22,reel,Product vs Brand: Kettles,covers/022_reel_product-vs-brand-kettles.jpg
+23,reel,Cyberdecks,covers/023_reel_cyberdecks.jpg
+24,reel,Wellness Waste,covers/024_reel_wellness-waste.jpg
+25,carousel,Why Is B2B Marketing So Boring,covers/025_carousel_why-is-b2b-marketing-so-boring.jpg
+26,reel,Streetwear Coffee Shops,covers/026_reel_streetwear-coffee-shops.jpg
+27,reel,What's the Biggest Mistake Brands Make,covers/027_reel_what-s-the-biggest-mistake-brands-make.jpg
+28,reel,Lacoste World Building,covers/028_reel_lacoste-world-building.jpg
+29,reel,Marketing Funnels,covers/029_reel_marketing-funnels.jpg
+30,reel,"Luxury Pets, Seoul",covers/030_reel_luxury-pets-seoul.jpg
+31,reel,Car Wars: Minivan or...,covers/031_reel_car-wars-minivan-or.jpg
+32,reel,The Color Vault,covers/032_reel_the-color-vault.jpg
+33,reel,Holiday Marketing Plan,covers/033_reel_holiday-marketing-plan.jpg
+34,reel,Luxury Excuses,covers/034_reel_luxury-excuses.jpg
+35,reel,Brand Storytelling 101,covers/035_reel_brand-storytelling-101.jpg
+36,reel,Halloween Decor Has Gotten Lazy,covers/036_reel_halloween-decor-has-gotten-lazy.jpg
+37,carousel,(no headline: desserts photo),covers/037_carousel_no-headline-desserts-photo.jpg
+38,reel,Michelin Star Coffee,covers/038_reel_michelin-star-coffee.jpg
+39,reel,Being Interesting Pays Better Than Being Rich,covers/039_reel_being-interesting-pays-better-than-being-rich.jpg
+40,reel,Same Stone (lab-grown diamonds in Henan),covers/040_reel_same-stone-lab-grown-diamonds-in-henan.jpg
+41,reel,The Luxury Codes: Motion,covers/041_reel_the-luxury-codes-motion.jpg
+42,reel,Travel Content Playbook,covers/042_reel_travel-content-playbook.jpg
+43,reel,Fall Blankets Buying Guide,covers/043_reel_fall-blankets-buying-guide.jpg
+44,reel,Takeout,covers/044_reel_takeout.jpg
+45,reel,World Building Marketing,covers/045_reel_world-building-marketing.jpg
+46,reel,The 8-Week Furniture Lie,covers/046_reel_the-8-week-furniture-lie.jpg
+47,reel,How to Source in China,covers/047_reel_how-to-source-in-china.jpg
+48,carousel,The Silicon Valley Marketing War,covers/048_carousel_the-silicon-valley-marketing-war.jpg
+49,reel,The Archetypes of Luxury,covers/049_reel_the-archetypes-of-luxury.jpg
+50,reel,Ralph Lauren Identity Masterclass,covers/050_reel_ralph-lauren-identity-masterclass.jpg
+51,reel,"The Psychology of ""Cute""",covers/051_reel_the-psychology-of-cute.jpg
+52,reel,DoorDash Air,covers/052_reel_doordash-air.jpg
+53,reel,Creative Operations,covers/053_reel_creative-operations.jpg
+54,reel,The Lore Behind Luxury Ketchup,covers/054_reel_the-lore-behind-luxury-ketchup.jpg
+55,reel,Creative Direction 101 (brand aesthetic throughlines),covers/055_reel_creative-direction-101-brand-aesthetic-throughline.jpg
+56,reel,Product vs Brand: Blenders,covers/056_reel_product-vs-brand-blenders.jpg
+57,reel,Restaurant Psychology,covers/057_reel_restaurant-psychology.jpg
+58,reel,The Next Ad Channel,covers/058_reel_the-next-ad-channel.jpg
+59,reel,"Everyone Is a ""Strategist"" Now",covers/059_reel_everyone-is-a-strategist-now.jpg
+60,reel,Visual Positioning 101 (using aesthetics in branding),covers/060_reel_visual-positioning-101-using-aesthetics-in-brandin.jpg
+61,reel,Should Consumers Buy Dupes?,covers/061_reel_should-consumers-buy-dupes.jpg
+62,reel,Product vs Brand: Fall Fragrance,covers/062_reel_product-vs-brand-fall-fragrance.jpg
+63,reel,AI Video Editing,covers/063_reel_ai-video-editing.jpg
+64,reel,The Rich Life,covers/064_reel_the-rich-life.jpg
+65,reel,"Fix Your Video Setup (lighting, framing & set adjustments)",covers/065_reel_fix-your-video-setup-lighting-framing-set-adjustme.jpg
+66,carousel,7 Viral One Shot Formats for Creators & Brands,covers/066_carousel_7-viral-one-shot-formats-for-creators-brands.jpg
+67,reel,Let's Head Back to the Ancient 1980s,covers/067_reel_let-s-head-back-to-the-ancient-1980s.jpg
+68,reel,Status of Hot: Looksmaxxing at Work,covers/068_reel_status-of-hot-looksmaxxing-at-work.jpg
+69,carousel,How to Make Content Without Looking Stupid,covers/069_carousel_how-to-make-content-without-looking-stupid.jpg
+70,reel,The Excuse Generation,covers/070_reel_the-excuse-generation.jpg
+71,carousel,Art Directing Your Content,covers/071_carousel_art-directing-your-content.jpg
+72,reel,Motion Graphics 101,covers/072_reel_motion-graphics-101.jpg
+73,reel,How to Sell to Gen-X,covers/073_reel_how-to-sell-to-gen-x.jpg
+74,reel,Art Direction (Art Direction Toolkit),covers/074_reel_art-direction-art-direction-toolkit.jpg
+75,reel,Product vs Brand: Towels,covers/075_reel_product-vs-brand-towels.jpg
+76,reel,The Luxury Codes: Knowledge,covers/076_reel_the-luxury-codes-knowledge.jpg
+77,carousel,Meet the Bots,covers/077_carousel_meet-the-bots.jpg
+78,reel,Creative Direction,covers/078_reel_creative-direction.jpg
+79,reel,S-Tier Brand Positioning,covers/079_reel_s-tier-brand-positioning.jpg
+80,reel,Luxury Suppliers,covers/080_reel_luxury-suppliers.jpg
+81,reel,Product vs Brand: Car Fragrances,covers/081_reel_product-vs-brand-car-fragrances.jpg
+82,reel,How Brands Use AI 101 (key terms explained),covers/082_reel_how-brands-use-ai-101-key-terms-explained.jpg
+83,reel,Who Pays Full Price?,covers/083_reel_who-pays-full-price.jpg
+84,reel,10/10 Creative Skills: Website Funnels 101 Training,covers/084_reel_10-10-creative-skills-website-funnels-101-training.jpg
+85,reel,Art Direction 101 (shoot anchors from low to high budget),covers/085_reel_art-direction-101-shoot-anchors-from-low-to-high-b.jpg
+86,reel,Luxury & Software,covers/086_reel_luxury-software.jpg
+87,reel,Who Pays Full Price? (with guest),covers/087_reel_who-pays-full-price-with-guest.jpg
+88,reel,Storage Unit: Keep It or Throw It Away?,covers/088_reel_storage-unit-keep-it-or-throw-it-away.jpg
+89,carousel,Your Customer Avatar Is Wrong,covers/089_carousel_your-customer-avatar-is-wrong.jpg
+90,reel,Bitter,covers/090_reel_bitter.jpg
+91,reel,Luxury Lives,covers/091_reel_luxury-lives.jpg
+92,carousel,The New Personality Era,covers/092_carousel_the-new-personality-era.jpg
+93,reel,Gear Acquisition Syndrome,covers/093_reel_gear-acquisition-syndrome.jpg
+94,reel,Experience Marketing,covers/094_reel_experience-marketing.jpg
+95,reel,Oren John: Darkroom Partner,covers/095_reel_oren-john-darkroom-partner.jpg
+96,reel,Gear Acquisition Syndrome (second video),covers/096_reel_gear-acquisition-syndrome-second-video.jpg
+97,reel,VLOG Master,covers/097_reel_vlog-master.jpg
+98,reel,Free Content Oracle (+ how to build your own),covers/098_reel_free-content-oracle-how-to-build-your-own.jpg
+99,carousel,(no headline: A-frame interior photo),covers/099_carousel_no-headline-a-frame-interior-photo.jpg
+100,reel,Product vs Brand: Fitness Trackers,covers/100_reel_product-vs-brand-fitness-trackers.jpg
+101,reel,NPC Vacation,covers/101_reel_npc-vacation.jpg
+102,reel,10/10 Era to Be Creative (if you overcome your own limiting beliefs),covers/102_reel_10-10-era-to-be-creative-if-you-overcome-your-own-.jpg
+103,reel,"How to Make a Shockingly Aesthetic Website (lean method, no developer)",covers/103_reel_how-to-make-a-shockingly-aesthetic-website-lean-me.jpg
+104,carousel,The Dupe Economy Playbook,covers/104_carousel_the-dupe-economy-playbook.jpg
+105,reel,Nothing Is Cool Anymore (3 reasons everything feels brutally iterative),covers/105_reel_nothing-is-cool-anymore-3-reasons-everything-feels.jpg
+106,carousel,"There's No Such Thing as a Boring Topic, Only Boring Content",covers/106_carousel_there-s-no-such-thing-as-a-boring-topic-only-borin.jpg
+107,reel,Exploring Puglia (and the workflows that let me do it),covers/107_reel_exploring-puglia-and-the-workflows-that-let-me-do-.jpg
+108,reel,The Anti-Mainstream Mainstream,covers/108_reel_the-anti-mainstream-mainstream.jpg
+109,reel,Advertising in the Algorithm Era,covers/109_reel_advertising-in-the-algorithm-era.jpg
+110,reel,The Four Luxury Archetypes,covers/110_reel_the-four-luxury-archetypes.jpg
+111,reel,The Interiors Economy,covers/111_reel_the-interiors-economy.jpg
+112,carousel,"To Make a Great Ad, You Need to Understand Human Psychology",covers/112_carousel_to-make-a-great-ad-you-need-to-understand-human-ps.jpg
+113,reel,Luxury Regret,covers/113_reel_luxury-regret.jpg
+114,reel,Rate the Rebrand,covers/114_reel_rate-the-rebrand.jpg
+115,carousel,The Keys to Creative Directing an Event,covers/115_carousel_the-keys-to-creative-directing-an-event.jpg
+116,reel,How to Build a Generational Email & SMS Marketing Machine (even with a lean team),covers/116_reel_how-to-build-a-generational-email-sms-marketing-ma.jpg
+117,reel,Grecian Maximalism,covers/117_reel_grecian-maximalism.jpg
+118,reel,How to Find the Cheapest Business Class Flights (ChatGPT Work + skill),covers/118_reel_how-to-find-the-cheapest-business-class-flights-ch.jpg
+119,reel,The Florida Man,covers/119_reel_the-florida-man.jpg
+120,reel,How to Become So Cracked at Marketing It Feels Illegal (boards + agents workflow),covers/120_reel_how-to-become-so-cracked-at-marketing-it-feels-ill.jpg
+121,carousel,The Identity Marketing Playbook,covers/121_carousel_the-identity-marketing-playbook.jpg
+122,reel,Amazon Accelerate 2026,covers/122_reel_amazon-accelerate-2026.jpg
+123,reel,How to Build a Creator Studio,covers/123_reel_how-to-build-a-creator-studio.jpg
+124,reel,A Buying Guide for Large Wall Art,covers/124_reel_a-buying-guide-for-large-wall-art.jpg
+125,reel,Luxury Apartments,covers/125_reel_luxury-apartments.jpg
+126,reel,Greek Islands by Catamaran (which islands to pick),covers/126_reel_greek-islands-by-catamaran-which-islands-to-pick.jpg
+127,carousel,The Lifecycle Marketing Playbook (for lean teams),covers/127_carousel_the-lifecycle-marketing-playbook-for-lean-teams.jpg
+128,reel,Who Are We Performing For?,covers/128_reel_who-are-we-performing-for.jpg
+129,reel,"Yachting in Greece: Jellyfish Attack. Plus, Syros!",covers/129_reel_yachting-in-greece-jellyfish-attack-plus-syros.jpg
+130,reel,"I Turned 40, So I'm Yachting Through Greece",covers/130_reel_i-turned-40-so-i-m-yachting-through-greece.jpg
+131,reel,Do You Trust Doctors,covers/131_reel_do-you-trust-doctors.jpg
+132,reel,Venecian Maximalism,covers/132_reel_venecian-maximalism.jpg
