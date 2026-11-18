@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=1080">
+<style>
+@font-face{font-family:Heebo;src:url(assets/fonts/heebo-hebrew-wght-normal.woff2) format("woff2");font-weight:100 900;unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:Heebo;src:url(assets/fonts/heebo-latin-wght-normal.woff2) format("woff2");font-weight:100 900;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--cream:#F5EDDF;--ink:#17352A;--amber:#F4A300;--muted:#56665B;--r:96px}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
+body{font-family:Heebo,sans-serif;direction:rtl;position:relative;color:var(--ink)}
+.scene{position:absolute;inset:0;display:none;overflow:hidden}
+.abs{position:absolute;right:var(--r)}
+/* motion primitives, driven by --p (0→1) */
+.mask{overflow:hidden;padding:.06em 0 .1em;line-height:1.02}
+.mask>span{display:block;transform:translateY(calc((1 - var(--p,0))*118%))}
+.fade{opacity:var(--p,0);transform:translateY(calc((1 - var(--p,0))*26px))}
+.pop{opacity:var(--p,0);transform:scale(calc(.55 + .45*var(--p,0)))}
+.rule{height:10px;background:var(--amber);border-radius:6px;transform:scaleX(var(--p,0));transform-origin:right}
+em{font-style:normal;position:relative;z-index:0;white-space:nowrap}
+.dark em{color:var(--ink)}
+em::before{content:"";position:absolute;z-index:-1;inset:.44em -.12em -.02em -.12em;background:var(--amber);border-radius:.08em;transform:scaleX(var(--p,0));transform-origin:right}
+/* hook */
+.scrim-t{position:absolute;left:0;right:0;top:0;height:var(--st,900px);background:linear-gradient(180deg,rgba(8,20,14,.72),rgba(8,20,14,.38) 55%,rgba(8,20,14,0))}
+.scrim-b{position:absolute;left:0;right:0;bottom:0;height:var(--sb,760px);background:linear-gradient(0deg,rgba(8,20,14,.78),rgba(8,20,14,.4) 55%,rgba(8,20,14,0))}
+.pill{display:inline-block;background:var(--amber);color:var(--ink);font-weight:800;font-size:38px;line-height:1;padding:16px 30px 18px;border-radius:999px;transform-origin:right center}
+.shd{filter:drop-shadow(0 5px 22px rgba(0,0,0,.38))}
+.h1{color:#fff;font-weight:800;font-size:104px}
+.h2{color:var(--amber);font-weight:900;font-size:176px;letter-spacing:-.01em}
+.h3{color:#fff;font-weight:700;font-size:70px}
+.foot{display:inline-flex;align-items:center;gap:16px;color:#fff;font-weight:600;font-size:44px;background:rgba(10,24,17,.55);backdrop-filter:blur(6px);padding:16px 34px 18px;border-radius:999px;border:2px solid rgba(255,255,255,.35)}
+.foot i{display:block;width:14px;height:14px;border-radius:50%;background:var(--amber)}
+/* cards */
+.card{background:var(--cream)}
+.card.dark{background:var(--ink);color:var(--cream)}
+.ghost{position:absolute;left:-40px;top:130px;font-weight:900;font-size:640px;line-height:1;color:rgba(23,53,42,.055);direction:ltr}
+.dark .ghost{color:rgba(245,237,223,.05)}
+.meta{position:absolute;left:96px;right:96px;top:238px;display:flex;justify-content:space-between;align-items:center}
+.tag{background:var(--ink);color:var(--cream);font-weight:800;font-size:34px;padding:12px 26px 14px;border-radius:999px}
+.dark .tag{background:var(--amber);color:var(--ink)}
+.cnt{font-weight:700;font-size:36px;color:var(--muted);direction:ltr;letter-spacing:.08em}
+.icon{width:210px;height:210px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center}
+.icon svg{width:104px;height:104px;overflow:visible}
+.icon>div{--p2:clamp(0,calc((var(--p,0) - .4)*1.8),1)}
+.icon path{fill:none;stroke:var(--ink);stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:100;stroke-dashoffset:calc((1 - var(--p,0))*100)}
+.ch{font-weight:900;font-size:112px;color:var(--ink);width:890px}
+.dark .ch{color:var(--cream);font-size:122px}
+.sub{font-weight:400;font-size:52px;line-height:1.38;color:var(--muted);width:830px}
+.dark .sub{color:rgba(245,237,223,.78)}
+.dots{position:absolute;right:96px;bottom:330px;display:flex;gap:14px;direction:rtl}
+.dots b{display:block;height:12px;width:56px;border-radius:8px;background:rgba(23,53,42,.16)}
+.dots b.on{background:var(--ink)}
+.done b{background:var(--ink)}
+.dark .dots b{background:rgba(245,237,223,.2)}
+</style></head><body><div id="root"></div>
+<script>
+const Q=new URLSearchParams(location.search), REEL=+(Q.get('reel')||1);
+const CFG={
+ 1:{part:'חלק 1',kind:'no',l2:'לא עושה',hookDur:4.2,
+    lay:{pill:222,l1:318,l2:432,l3:610,foot:1566,st:880,sb:700},
+    cards:[
+     {a:'<em data-at=".75" data-d=".5">לא</em> מדלגת',b:'על הארוחה הבאה',s:'דילוג רק מגדיל את הרעב, ומחזיר אותי לאכול יותר מדי.'},
+     {a:'<em data-at=".75" data-d=".5">לא</em> מענישה',b:'את עצמי באימון',s:'פעילות היא לא קנס על אוכל. היא מתנה לגוף.'},
+     {a:'<em data-at=".75" data-d=".5">לא</em> עולה',b:'על המשקל',s:'יום אחד של אוכל לא משנה כלום. מה שקורה לאורך שבועות, כן.'},
+     {a:'<em data-at=".75" data-d=".5">לא</em> אומרת',b:'"נכשלתי"',s:'ארוחה אחת היא לא תהליך. ממשיכים מהארוחה הבאה.'}],
+    cta:{a:'ומה',b:'<em data-at=".7" data-d=".5">כן</em> עושה?',s:'חלק 2 בדרך. עקבו כדי לא לפספס.',tag:'להמשך'}},
+ 2:{part:'חלק 2',kind:'yes',l2:'כן עושה',hookDur:4.0,
+    lay:{pill:206,l1:282,l2:386,l3:1262,foot:1420,st:640,sb:760},
+    cards:[
+     {a:'<em data-at=".75" data-d=".5">שותה</em> מים',b:'וממשיכה הלאה',s:'בלי דרמה ובלי "איפוס". פשוט ממשיכה את היום.'},
+     {a:'יוצאת להליכה',b:'של <em data-at=".75" data-d=".5">10 דקות</em>',s:'תנועה קלה עוזרת להרגיש טוב. זה לא עניין של שריפת קלוריות.'},
+     {a:'הארוחה הבאה',b:'<em data-at=".75" data-d=".5">לפי הרעב</em>',s:'אוכלת כשרעבה, בכמות רגילה. בלי לפצות ובלי להרעיב.'},
+     {a:'הולכת לישון',b:'<em data-at=".75" data-d=".5">בזמן</em>',s:'שינה טובה מאזנת את הרעב והתיאבון של מחר.'}],
+    cta:{a:'ארוחה אחת',b:'<em data-at=".7" data-d=".5">לא</em> קובעת כלום',s:'שמרו לפעם הבאה, ושלחו למי שצריכה לשמוע את זה.',tag:'לסיום'}}
+};
+const C=CFG[REEL], L=C.lay, CARD=3.0, CTA=3.6;
+const icon=(k)=>k==='no'?'<svg viewBox="0 0 100 100"><path d="M20 20L80 80" pathLength="100"/><path d="M80 20L20 80" pathLength="100" style="stroke-dashoffset:calc((1 - var(--p2,0))*100)"/></svg>':'<svg viewBox="0 0 100 100"><path d="M14 54L40 80L88 22" pathLength="100"/></svg>';
+const X2=(k)=>k==='no'?'<svg viewBox="0 0 100 100"><path d="M82 18L18 82" pathLength="100" style="stroke-dasharray:100;stroke-dashoffset:calc((1 - var(--p,0))*100)"/></svg>':'';
+const scenes=[]; const root=document.getElementById('root');
+function mk(html,cls,start,wipe){const el=document.createElement('section');el.className='scene '+cls;el.innerHTML=html;el.style.zIndex=scenes.length+1;root.appendChild(el);scenes.push({el,start,wipe});}
+// hook
+mk(`<div class="scrim-t" style="--st:${L.st}px"></div><div class="scrim-b" style="--sb:${L.sb}px"></div>
+ <div class="abs" style="top:${L.pill}px"><span class="pill pop" data-at=".1" data-d=".5" data-e="back">${C.part}</span></div>
+ <div class="abs shd" style="top:${L.l1}px"><div class="h1 mask" data-at=".3" data-d=".7"><span>דברים שאני</span></div></div>
+ <div class="abs shd" style="top:${L.l2}px"><div class="h2 mask" data-at=".55" data-d=".8"><span>${C.l2}</span></div></div>
+ <div class="abs shd" style="top:${L.l3}px"><div class="h3 mask" data-at="1.0" data-d=".7"><span>אחרי שאכלתי יותר מדי</span></div></div>
+ <div class="abs fade" style="top:${L.foot}px" data-at="1.55" data-d=".6"><span class="foot"><i></i>בתור דיאטנית</span></div>`,'hook',0,false);
+// cards
+let t=C.hookDur;
+const N=C.cards.length;
+C.cards.forEach((c,i)=>{
+ const dots=Array.from({length:N},(_,j)=>`<b class="${j<=i?'on':''}"></b>`).join('');
+ mk(`<div class="ghost">0${i+1}</div>
+ <div class="meta"><span class="tag">${C.part}</span><span class="cnt">0${i+1} / 0${N}</span></div>
+ <div class="abs icon pop" style="top:520px" data-at=".25" data-d=".55" data-e="back"><div data-at=".5" data-d=".5" style="display:flex">${icon(C.kind)}</div></div>
+ <div class="abs ch mask" style="top:820px" data-at=".4" data-d=".7"><span>${c.a}</span></div>
+ <div class="abs ch mask" style="top:955px" data-at=".55" data-d=".7"><span>${c.b}</span></div>
+ <div class="abs rule" style="top:1160px;width:170px" data-at=".95" data-d=".5"></div>
+ <div class="abs sub fade" style="top:1216px" data-at="1.05" data-d=".7">${c.s}</div>
+ <div class="dots">${dots}</div>`,'card',t,true);
+ t+=CARD;
+});
+mk(`<div class="ghost">★</div>
+ <div class="meta"><span class="tag">${C.cta.tag}</span><span class="cnt"></span></div>
+ <div class="abs ch mask" style="top:640px" data-at=".4" data-d=".7"><span>${C.cta.a}</span></div>
+ <div class="abs ch mask" style="top:810px" data-at=".55" data-d=".7"><span>${C.cta.b}</span></div>
+ <div class="abs rule" style="top:1090px;width:170px" data-at=".95" data-d=".5"></div>
+ <div class="abs sub fade" style="top:1146px" data-at="1.05" data-d=".7">${C.cta.s}</div>`,'card dark',t,true);
+const TOTAL=t+CTA;
+const clamp=x=>Math.max(0,Math.min(1,x));
+const E={out:p=>1-Math.pow(1-p,3),back:p=>{const c=1.4;return 1+(c+1)*Math.pow(p-1,3)+c*Math.pow(p-1,2)},io:p=>p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2};
+window.TOTAL=TOTAL;
+window.seek=function(time){
+ scenes.forEach(s=>{const vis=time>=s.start-1e-3;s.el.style.display=vis?'block':'none';if(!vis)return;
+  if(s.wipe){const p=E.io(clamp((time-s.start)/.55));s.el.style.clipPath=`inset(${(1-p)*100}% 0 0 0)`}
+  s.el.querySelectorAll('[data-at]').forEach(a=>{const at=+a.dataset.at,d=+(a.dataset.d||.6);const e=(E[a.dataset.e||'out'])(clamp((time-s.start-at)/d));a.style.setProperty('--p',e)});
+ });
+};
+window.HOOK=C.hookDur;
+document.fonts.ready.then(()=>{window.READY=true;seek(0)});
+</script></body></html>
